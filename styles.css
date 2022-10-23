@@ -1,0 +1,15 @@
+.pdf-div, .image-div {
+  width: 50%;
+}
+
+.insert-div {
+  margin: 2% 0;
+}
+
+.summary-div {
+  margin: 2% 0;
+}
+
+.btn {
+  width: 100%;
+}

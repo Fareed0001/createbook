@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create-book</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <form action="https://nvmaedo.com/api/v1/books/bookish/newbook" method="post">
+    <div class="container">
+      <h1>Create book</h1>
+      <div class="form-details">
+
+        <div class="insert-div row g-2">
+          <div class="col-md pdf-div">
+            <label for="file">Select pdf:</label>
+            <input type="file" class="form-control-file" name="pdf" id="pdf">
+          </div>
+          <div class="col-md image-div">
+            <label for="image">Select image:</label>
+            <input type="file" accept="image/png, image/jpeg, image/jpg, image/avif, image/gif" class="form-control-file" name="image" id="images">
+          </div>
+        </div>
+
+        <div class="name-div row g-3">
+          <div class="col-md">
+            <input type="text" class="form-control" name="title" placeholder="book title:" id="title" value="">
+          </div>
+          <div class="col-md">
+            <div class="row">
+              <div class="col-md">
+                <input type="text" class="form-control" name="author" placeholder="author:" id="author" value="">
+              </div>
+              <div class="col-md">
+                <input type="text" class="form-control" name="price" placeholder="price:" id="price" value="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary-div">
+          <textarea type="text" class="form-control" name="summary" id="summary" rows="3" placeholder="Summary text:"></textarea>
+        </div>
+
+        <div class="button-div">
+        <div class="row">
+          <div class="col-md">
+            <div class="genre-div">
+              <input type="text" class="form-control" name="genre" id="genre" placeholder="genre(s):" value="">
+            </div>
+          </div>
+          <div class="col-md">
+              <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </div>
+        </div>
+
+      </div>
+
+    </div>
+  </form>
+
+</body>
+
+</html>
